@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body */
+body{
+    background-color: #E6ECF7; /* Link Water */
+}
+
+/* Main Top Heading */
+/* Add basic styles for the header */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: #E6ECF7; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*  subtle shadow for better visibility */
+    z-index: 100; /* Ensure the header appears above other content */
+}
+
+/* Style the header text as needed */
+.main_text {
+    padding: 30px;
+    text-align: center;
+}
+
+.welcome {
+    font-size: 36px; /* Increase font size for emphasis */
+    margin: 0;
+    color: #34495E; /* Text color */
+    font-family: 'Roboto', sans-serif; /* Use a Google Font for an interesting font style */
+    font-weight: bold; /* Add bold style for emphasis */
+    text-transform: uppercase; /* Uppercase text for impact */
+    letter-spacing: 1px; /* Increase letter spacing for readability */
+}
+
+/* Dropdown */
+
+/* Centered Dropdown Container */
+.dropdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; /* Adjust the margin as needed */
+}
+
+/* Style the Dropdown Form */
+.dropdown_form {
+    text-align: center;
+}
+
+/* Style the Location Label */
+label {
+    font-size: 33px; /* Adjust font size as needed */
+    font-weight: bold;
+    color: dodgerblue; /* Change the text color */
+    font-family: 'Montserrat', sans-serif; /* Change the font style */
+    margin-top: 5px; /* Adjust as needed for the desired gap */
+}
+
+/* Style the Dropdown Select */
+select {
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 8px;
+    background-color: #F4F4F4; /* Change the background color */
+    color: #333; /* Change the text color */
+    font-family: 'Montserrat', sans-serif; /* Change the font style */
+    margin-left: 5px; /* Adjust as needed for the desired gap */
+}
+
+/* Style the Submit Button */
+input[type="submit"] {
+    background-color: #0deded; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: 18px; /* Adjust font size as needed */
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-left: 10px; /* Adjust as needed for the desired gap */
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9; /* Hover color */
+}
+
+
+/* Weather Box Styling */
+.weather-box {
+    margin: 40px auto; /* Center horizontally */
+    max-width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f0f0f0; /* Background color */
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.3); /*rgba(30,144,255,0.3) Box shadow for all sides */
+}
+
+/* Weather Heading Styling */
+.weather-heading {
+    font-size: 24px;
+    color: #1897ec; /* Text color */
+    margin: 0 0 20px; /* Spacing below the heading */
+}
+
+/* Weather Info Styling */
+.weather-info {
+    font-size: 18px;
+    color: #333; /* Text color */
+}
+
+/* Weather Property Styling */
+.weather-property {
+    margin: 10px 0; /* Adjust the line spacing between properties */
+}
+
+/* Property Label Styling */
+.property-label {
+    font-weight: bold;
+    color: #444; /* Text color for labels */
+}
+
+/* Property Value Styling */
+.property-value {
+    font-weight: normal;
+    color: #555; /* Text color for values */
+}
+
+/* New Text  */
+/* Styling for the user-location text */
+.user-location {
+    font-family: Arial, Helvetica, sans-serif; /* Choose an appropriate font family */
+    font-size: 30px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Set the text color to a dark color, e.g., black or dark gray */
+    text-align: center; /* Center-align the text */
+    margin-top: 35px; /* Add a margin at the top to create space */
+  }
+  
+  /* Styling for the city name within the user-location text */
+  #city-name {
+    /* text-decoration: underline; Add underline to the city name */
+    color: #007BFF; /* Use a different color for the city name, e.g., blue */
+    /* border: 5px solid #007BFF; */
+  }
