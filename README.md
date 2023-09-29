@@ -29,3 +29,16 @@ Welcome to My [FORECLIME](https://foreclime.vercel.app/) Weather App, a simple w
 There's no need to install anything. Simply open the app in your web browser.
 
 **Coming Soon**: More cities are coming soon. We apologize for any inconvenience.
+
+## How to Contribute
+
+We welcome contributions to improve Our [FORECLIME](https://foreclime.vercel.app/) App. To contribute, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix: `git checkout -b feature-name`.
+3. Make your changes and commit them: `git commit -m 'Add new feature'`.
+4. Push your changes to your forked repository: `git push origin feature-name`.
+5. Create a pull request (PR) from your forked repository to the main repository.
+6. Provide a clear description of your changes in the PR.
+
+Your contribution will be reviewed, and if everything looks good, it will be merged into the main branch. Thank you for helping improve Our [FORECLIME](https://foreclime.vercel.app/) App!
