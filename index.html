@@ -4,74 +4,99 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ForeClime</title>
-    <link rel="shortcut icon" href="/assets/images/FORECLIME_1.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="/assets/images/FORECLIME_1.png"
+      type="image/x-icon"
+    />
     <!-- CSS Styles -->
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <!-- Main -->
-    <div class="main">
-      <!-- Main Top Heading -->
-      <!-- Sticky Header -->
-      <header class="sticky-header">
-        <div class="main_text">
-          <h1 class="welcome">Welcome to ForeClime</h1>
-        </div>
-      </header>
-      <!-- Centered Dropdown -->
-      <div class="dropdown-container">
-        <div class="dropdown">
-          <!-- Main Dropdown Box -->
-          <div class="dropdown_form">
-            <form id="weather-form" action="">
-              <!-- Location Text -->
-              <label for="location">Choose Location:</label>
-              <!-- Dropdown Box -->
-              <select name="location" id="location">
-                <option value="bengaluru">Bengaluru</option>
-                <option value="delhi">Delhi</option>
-                <option value="hyderabad">Hyderabad</option>
-                <option value="chennai">Chennai</option>
-                <option value="mumbai">Mumbai</option>
-                <option value="tirupati">Tirupati</option>
-              </select>
-              <!-- Submit Button -->
-              <input type="submit" value="Submit" id="submit-button" />
-            </form>
+    <div class="wrapper">
+      <!-- Main -->
+      <div class="main">
+        <!-- Main Top Heading -->
+        <!-- Sticky Header -->
+        <header class="sticky-header">
+          <div class="main_text">
+            <h1 class="welcome">Welcome to ForeClime</h1>
+          </div>
+        </header>
+        <!-- Centered Dropdown -->
+        <div class="dropdown-container">
+          <div class="dropdown">
+            <!-- Main Dropdown Box -->
+            <div class="dropdown_form">
+              <form id="weather-form" action="">
+                <!-- Location Text -->
+                <label for="location">Choose Location:</label>
+                <!-- Dropdown Box -->
+                <select name="location" id="location">
+                  <option value="bengaluru">Bengaluru</option>
+                  <option value="delhi">Delhi</option>
+                  <option value="hyderabad">Hyderabad</option>
+                  <option value="chennai">Chennai</option>
+                  <option value="mumbai">Mumbai</option>
+                  <option value="tirupati">Tirupati</option>
+                </select>
+                <!-- Submit Button -->
+                <input type="submit" value="Submit" id="submit-button" />
+              </form>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- New Text Element -->
-      <div class="user-location">
-        <p>
-          Hey Buddy! Looks like you are in <span id="city-name">CityName</span>
-        </p>
-      </div>
+        <!-- New Text Element -->
+        <div class="user-location">
+          <p>
+            Hey Buddy! Looks like you are in
+            <span id="city-name">CityName</span>
+          </p>
+        </div>
 
-      <!-- Weather Box -->
-      <div class="weather-box">
-        <h2 class="weather-heading">TODAY'S WEATHER</h2>
-        <div class="weather-info">
-          <div class="weather-property">
-            <span class="property-label">Temperature:</span>
-            <span class="property-value" id="temperature"></span>
-          </div>
-          <div class="weather-property">
-            <span class="property-label">Weather Condition:</span>
-            <span class="property-value" id="weather-condition"></span>
-          </div>
-          <div class="weather-property">
-            <span class="property-label">Humidity:</span>
-            <span class="property-value" id="humidity"></span>
-          </div>
-          <div class="weather-property">
-            <span class="property-label">Wind Speed:</span>
-            <span class="property-value" id="wind-speed"></span>
+        <!-- Weather Box -->
+        <div class="weather-box">
+          <h2 class="weather-heading">TODAY'S WEATHER</h2>
+          <div class="weather-info">
+            <div class="weather-property">
+              <span class="property-label">Temperature:</span>
+              <span class="property-value" id="temperature"></span>
+            </div>
+            <div class="weather-property">
+              <span class="property-label">Weather Condition:</span>
+              <span class="property-value" id="weather-condition"></span>
+            </div>
+            <div class="weather-property">
+              <span class="property-label">Humidity:</span>
+              <span class="property-value" id="humidity"></span>
+            </div>
+            <div class="weather-property">
+              <span class="property-label">Wind Speed:</span>
+              <span class="property-value" id="wind-speed"></span>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-left">
+        <a href="https://forms.gle/mTmPK7EwFmyNSkdr5" target="_blank"
+          >Feedback</a
+        >
+      </div>
+      <div class="footer-center">
+        <a
+          href="https://www.linkedin.com/in/boyapati-sai-kumar/"
+          target="_blank"
+          >About Me</a
+        >
+      </div>
+      <div class="footer-right">
+        <a href="#" target="_blank">Contribute</a>
+      </div>
+    </footer>
     <!-- JavaScript Code -->
     <script src="/app.js"></script>
   </body>
