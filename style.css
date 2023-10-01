@@ -27,7 +27,7 @@ body{
 .welcome {
     font-size: 36px; /*  font size */
     margin: 0;
-    color: #34495E; /* Text color */
+    color: #007BFF; /* Text color */
     font-family: 'Roboto', sans-serif; /* font style */
     font-weight: bold; /*  bold style   */
     text-transform: uppercase; /* Uppercase text   */
@@ -105,7 +105,7 @@ input[type="submit"]:hover {
 /* Weather Heading Styling */
 .weather-heading {
     font-size: 24px;
-    color: #1897ec; /* Text color */
+    color: #007BFF; /* Text color */
     margin: 0 0 20px; /* Spacing below the heading */
 }
 
@@ -201,7 +201,7 @@ input[type="submit"]:hover {
   }
 
  /* Media query for screens with a maximum width of 768px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .weather-box {
       max-width: 90%; /* Increase the maximum width for smaller screens */
     }
