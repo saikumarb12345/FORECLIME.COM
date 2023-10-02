@@ -8,6 +8,7 @@ Welcome to My [FORECLIME](https://foreclime.vercel.app/) Weather App, a simple w
 - Get real-time weather information for the selected location.
 - View temperature, weather condition, humidity, and wind speed.
 - See a personalized greeting based on your selected location.
+- **Share Weather**: Share current weather information with friends and family via WhatsApp or other platforms. Just click the "Share" button to spread the weather update.
 
 ## How to Use
 
@@ -28,6 +29,10 @@ Are you tired of unpredictable weather catching you off guard? Do you want a sim
 ### User-Friendly and Intuitive
 
 We've designed ForeClime App to be incredibly user-friendly. No more complex interfaces or confusing jargon. Just select your desired city from the dropdown menu, click "Submit," and instantly access clear and concise weather details. It's that easy!
+
+### Share Weather
+
+ForeClime App not only provides you with accurate and up-to-date weather information but also makes it easy to share this information with your loved ones. With the "Share Weather" feature, you can quickly send weather updates to anyone, ensuring they're prepared for the day's conditions.
 
 ### Essential Weather Data
 
