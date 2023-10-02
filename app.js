@@ -36,21 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
           return webUrl;
         }
 
-        // Function to generate the URL
-        function generateShareableURL() {
-          const selectedLocation = locationSelect.value; // Get the selected location
-          const weatherData = {
-            temperature: temperatureValue.textContent,
-            condition: weatherConditionValue.textContent,
-            humidity: humidityValue.textContent,
-            windSpeed: windSpeedValue.textContent,
-          };
-
-          // Construct a URL with query parameters
-          const shareURL = `https://foreclime.vercel.app/?location=${selectedLocation}&temp=${weatherData.temperature}&cond=${weatherData.condition}&hum=${weatherData.humidity}&wind=${weatherData.windSpeed}`;
-
-          return shareURL;
-        }
+        // Function to generate the URL [REMOVED]
 
         // Function to generate the shareable text and URL
         function generateShareableText() {
@@ -60,8 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
           - Temperature: ${data.main.temp}°C
           - Humidity: ${data.main.humidity}%
           - Wind Speed: ${data.wind.speed} km/h`;
-          const shareURL = generateShareableURL(); // Calling the existing function to generate the URL
-          return `${title}\n\n${weatherText}\n\n${shareURL}`;
+        //   [REMOVED]const shareURL = generateShareableURL(); // Calling the existing function to generate the URL
+          return `${title}\n\n${weatherText}`;
         }
 
         // Function to handle sharing when the share button is clicked
