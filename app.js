@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Function to generate the shareable text and URL
         function generateShareableText() {
           const title = `Check out the weather in ${selectedLocation.toUpperCase()}! From ForeClime(${websiteUrl()})`;
-          const weatherText = `Current weather in ${selectedLocation.toUpperCase()}:
+          const weatherText = `Current weather in ${selectedLocation.toUpperCase()}:\n
           - Weather Condition: ${data.weather[0].description.toUpperCase()}
           - Temperature: ${data.main.temp}°C
           - Humidity: ${data.main.humidity}%
