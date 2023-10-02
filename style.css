@@ -208,7 +208,7 @@ input[type="submit"]:hover {
     right: 0; /* Align with the right edge of the weather box */
     /* background-color: #007BFF; Button background color */
     color: #fff; /* Button text color */
-    font-size: 23px; /* Adjust font size */
+    font-size: 30px; /* Adjust font size */
     font-family: 'Montserrat', sans-serif;
     padding: 5px 8px;
     border: none;
