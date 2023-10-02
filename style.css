@@ -93,6 +93,7 @@ input[type="submit"]:hover {
 
 /* Weather Box Styling */
 .weather-box {
+    position: relative;
     margin: 40px auto; /* Center horizontally */
     max-width: 50%;
     text-align: center;
@@ -200,6 +201,21 @@ input[type="submit"]:hover {
     text-decoration: none; 
   }
 
+  /* Share button */
+  .share-button {
+    position: absolute; /* Position relative to the weather box */
+    top: 0; /* Align with the top edge of the weather box */
+    right: 0; /* Align with the right edge of the weather box */
+    /* background-color: #007BFF; Button background color */
+    color: #fff; /* Button text color */
+    font-size: 23px; /* Adjust font size */
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
  /* Media query for screens with a maximum width of 768px */
 @media screen and (max-width: 1000px) {
     .weather-box {

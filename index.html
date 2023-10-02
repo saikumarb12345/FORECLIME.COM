@@ -9,6 +9,13 @@
       href="/assets/images/FORECLIME_1.png"
       type="image/x-icon"
     />
+    <!-- Html2Canvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <!-- CSS Styles -->
     <link rel="stylesheet" href="/style.css" />
   </head>
@@ -58,6 +65,9 @@
         <!-- Weather Box -->
         <div class="weather-box">
           <h2 class="weather-heading">TODAY'S WEATHER</h2>
+          <button id="share-button" class="share-button">
+            <i class="fa-solid fa-share" style="color: #1465f0"></i>
+          </button>
           <div class="weather-info">
             <div class="weather-property">
               <span class="property-label">Temperature:</span>
@@ -94,7 +104,11 @@
         >
       </div>
       <div class="footer-right">
-        <a href="https://boyapatisaisblog.hashnode.dev/a-guide-to-contributing-to-foreclime-weather-app" target="_blank">Contribute</a>
+        <a
+          href="https://boyapatisaisblog.hashnode.dev/the-open-source-journey-a-guide-for-beginners"
+          target="_blank"
+          >Open Source</a
+        >
       </div>
     </footer>
     <!-- JavaScript Code -->

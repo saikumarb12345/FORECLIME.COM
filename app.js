@@ -8,7 +8,62 @@ document.addEventListener("DOMContentLoaded", function () {
     const humidityValue = document.querySelector('#humidity'); 
     const windSpeedValue = document.querySelector('#wind-speed'); 
     const cityNameElement = document.querySelector('#city-name');
+    const selectedLocation = locationSelect.value;
 
+    function generateShareableURL() {
+        const weatherData = {
+          temperature: temperatureValue.textContent,
+          condition: weatherConditionValue.textContent,
+          humidity: humidityValue.textContent,
+          windSpeed: windSpeedValue.textContent,
+        };
+      
+        //  URL with query parameters
+        const shareURL = `https://foreclime.vercel.app/?location=${selectedLocation}&temp=${weatherData.temperature}&cond=${weatherData.condition}&hum=${weatherData.humidity}&wind=${weatherData.windSpeed}`;
+      
+        return shareURL;
+      }
+
+      function captureWeatherImage() {
+        const weatherBox = document.querySelector('.weather-box');
+      
+        return html2canvas(weatherBox, { useCORS: true }).then((canvas) => {
+          return canvas.toDataURL('image/jpeg', 0.9);
+        });
+      }
+
+      async function shareWeather() {
+        try {
+          const shareURL = generateShareableURL();
+          const shareData = {
+            title: 'Check out the weather!',
+            text: `Current weather in ${selectedLocation}: ${weatherConditionValue.textContent}, ${temperatureValue.textContent}`,
+            url: shareURL,
+          };
+      
+          // Capture the weather box as an image
+          const weatherImage = await captureWeatherImage();
+      
+          // Adding the image to the share data
+          shareData.files = [new File([weatherImage], 'weather.jpg', { type: 'image/jpeg' })];
+      
+          // Web Share API to provide sharing options
+          if (navigator.share) {
+            await navigator.share(shareData);
+          } else {
+            // Fallback for browsers that don't support Web Share API
+            alert('Sharing not supported on this browser.');
+          }
+        } catch (error) {
+          console.error('Error sharing weather:', error);
+        }
+      }
+      
+      // shareWeather function to the share button
+      const shareButton = document.getElementById('share-button');
+      shareButton.addEventListener('click', shareWeather);
+
+      // Code for fetching weather data from api
     form.addEventListener('submit', function (event) {
         event.preventDefault(); // Prevent form submission
 
